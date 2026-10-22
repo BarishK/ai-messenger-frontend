@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useParams, useRouter } from "next/navigation";
 import api from "@/lib/api";
 
-export default function ChatPage() {
+function ChatContent() {
   const params = useParams();
   const personaSlug = params?.personaSlug;
   const router = useRouter();
@@ -133,5 +133,19 @@ export default function ChatPage() {
         </button>
       </form>
     </div>
+  );
+}
+
+export default function ChatPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex h-screen items-center justify-center bg-gray-900 text-white">
+          Yükleniyor...
+        </div>
+      }
+    >
+      <ChatContent />
+    </Suspense>
   );
 }
