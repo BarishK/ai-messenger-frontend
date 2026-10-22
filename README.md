@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤖 AI Messenger
 
-## Getting Started
+**VERCEL**
+https://ai-messenger-frontend-y15n.vercel.app/
 
-First, run the development server:
+A sleek, modern full-stack messaging application that lets users interact with personalized AI roleplay personas in real time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Built with a **Next.js (App Router)** frontend deployed on Vercel, a **Node.js / Express** backend deployed on Render, and a managed **MySQL** database on Aiven.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 💬 **Dynamic AI Chat Rooms:** Real-time messaging with individual AI personas powered by LLM integration.
+- ⚡ **Next.js App Router & Turbopack:** Fast page transitions, optimized rendering, and client-side dynamic routing.
+- 🎨 **Modern UI/UX:** Styled with Tailwind CSS, featuring dark mode aesthetic, reactive input states, and auto-scrolling chat history.
+- 🔒 **Authentication & Security:** Secure JWT token-based authentication with auto-injecting Axios interceptors and password hashing.
+- 🗄️ **Managed Database & SSL:** Cloud-hosted MySQL database with full SSL/TLS encrypted connection.
+- 📱 **Fully Responsive:** Seamless layout designed for both desktop and mobile devices.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Frontend
+- **Framework:** Next.js (React / App Router)
+- **Styling:** Tailwind CSS
+- **HTTP Client:** Axios (with Interceptors)
+- **Deployment:** Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Backend & Database
+- **Runtime:** Node.js / Express.js
+- **Database:** MySQL (Hosted on Aiven Cloud)
+- **Database Driver:** `mysql2` (SSL/TLS Enabled)
+- **AI Integration:** Groq SDK (LLM Engine)
+- **Authentication:** JSON Web Tokens (JWT) & `bcryptjs`
+- **Deployment:** Render
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
